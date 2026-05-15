@@ -4079,7 +4079,9 @@ main {
 }
 
 .btn-secondary:hover {
-    background-color: var(--input-bg);
+    background-color: var(--paper-color);
+    filter: brightness(1.1);
+    border-color: var(--accent-gold);
     transform: translateY(-2px);
     box-shadow: var(--shadow-soft);
 }
