@@ -4622,4 +4622,97 @@ body.night-mode .tooltip-author {
   padding-top: 1rem;
   border-top: 1px solid #374151;
 }
+/* =========================
+   Reader Perspectives
+========================= */
 
+.reader-perspectives {
+    padding: 6rem 10%;
+
+    background:
+      linear-gradient(
+        to bottom,
+        transparent,
+        rgba(255,255,255,0.25),
+        transparent
+      );
+}
+
+.perspective-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.perspective-card {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.04),
+    inset 0 1px 0 rgba(255,255,255,0.4);
+
+    border: 1px solid rgba(0,0,0,0.08);
+
+    border-radius: 20px;
+
+    padding: 2rem;
+
+    backdrop-filter: blur(10px);
+
+    transition: all 0.3s ease;
+}
+
+.perspective-card:hover {
+    transform: translateY(-8px);
+    
+    box-shadow:
+      0 18px 40px rgba(0,0,0,0.08);
+
+    border-color: rgba(0,0,0,0.12);
+}
+
+.perspective-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1.2rem;
+}
+
+.avatar-circle {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0,0,0,0.05);
+
+    font-size: 1.2rem;
+}
+
+.perspective-user h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.stars {
+    margin: 0.2rem 0 0;
+    color: #c59d5f;
+}
+
+.perspective-text {
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--text-main);
+}
+@media (max-width: 768px) {
+
+    .perspective-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
