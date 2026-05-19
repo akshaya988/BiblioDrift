@@ -5323,3 +5323,14 @@ html, body {
     background: rgba(212, 175, 55, 0.1);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
+
+/* --- Mood Sync Theme System Overrides --- */
+[data-mood] {
+    --bg-color: var(--theme-bg) !important;
+    --text-main: var(--theme-text) !important;
+    --text-muted: var(--theme-text-muted) !important;
+    --input-border: var(--theme-border) !important;
+    --book-bg: var(--theme-surface) !important;
+    --header-bg: var(--theme-bg) !important;
+    --accent-gold: var(--theme-accent) !important;
+}
